@@ -88,3 +88,4 @@
 #define KEY_VOL_UP 65
 #define KEY_VOL_DOWN 66
 #define KEY_POWER 67
+#endif
