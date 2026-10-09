@@ -1,0 +1,22 @@
+#define _XOPEN_SOURCE 700
+
+#include <ftw.h>
+#include <stdio.h>
+#include <stdlib.h>
+
+static int delete_entry(
+    const char *path,
+    const struct stat *info,
+    int type,
+    struct FTW *buffer
+) {
+    (void)info;
+    (void)type;
+    (void)buffer;
+
+    return remove(path);
+}
+
+int delete(const char *path) {
+    return nftw(path, delete_entry, 16, FTW_DEPTH | FTW_PHYS);
+}
