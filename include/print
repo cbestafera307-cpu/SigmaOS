@@ -13,13 +13,21 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+
 #ifndef _SIGMA_PRINT_H
 #define _SIGMA_PRINT_H
+
 #include <unistd.h>
 
-void print(const char *msg) {
+static inline void print(const char *msg) {
     while (*msg) {
         write(1, msg, 1);
         msg++;
     }
 }
+
+#define ERROR "Error: "
+#define KERNEL "Kernel Message: "
+#define NORMAL ""
+#define BOOTLOADER "Bootloader: "
+#endif
