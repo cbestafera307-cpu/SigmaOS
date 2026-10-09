@@ -1,4 +1,4 @@
-#include <sys/stat.h>
+#include <sys/stat.h> //para mkdir();
 
 void __createfiles__(void) {
 mkdir("/system", 0755);
