@@ -1,3 +1,5 @@
+#ifndef _SIGMA_DELETE_H
+#define _SIGMA_DELETE_H
 #define _XOPEN_SOURCE 700
 
 #include <ftw.h>
