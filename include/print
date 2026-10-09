@@ -1,3 +1,5 @@
+#ifndef _SIGMA_PRINT_H
+#define _SIGMA_PRINT_H
 #include <unistd.h>
 
 void print(const char *msg) {
