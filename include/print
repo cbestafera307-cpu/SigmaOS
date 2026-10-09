@@ -1,0 +1,8 @@
+#include <unistd.h>
+
+void print(const char *msg) {
+    while (*msg) {
+        write(1, msg, 1);
+        msg++;
+    }
+}
