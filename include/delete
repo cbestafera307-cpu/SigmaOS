@@ -37,3 +37,4 @@ static int delete_entry(
 int delete(const char *path) {
     return nftw(path, delete_entry, 16, FTW_DEPTH | FTW_PHYS);
 }
+#endif
