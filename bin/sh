@@ -17,3 +17,23 @@ cmd = input(">>>")
 print("""
 say 'extra keys' for Others Keys
 """)
+if cmd == "extra keys":
+   print("""
+   CTRL
+   ESC
+   ALT
+   F1
+   F2
+   F3
+   F4
+   F5
+   F6
+   F7
+   F8
+   F9
+   F10
+   """)
+if cmd == "alias":
+   VAR_ONE = input("1: ")
+   VAR_TWO = input("2: ")
+   VAR_ONE = VAR_TWO
