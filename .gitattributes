@@ -1,2 +1,3 @@
 /bin/sh linguist-language=Python
 /include/delete linguist-language=C
+/include/print linguist-language=C
