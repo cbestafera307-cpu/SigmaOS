@@ -16,3 +16,4 @@ const char *__COMPILER_CREATOROFFILE;
 #        define NINE (EIGHT+1)
 #         define TEN (NINE+1)
 #define num(name, number) int name = number
+#define e (2.71828182846)
